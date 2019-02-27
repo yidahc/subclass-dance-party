@@ -26,3 +26,14 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.dancer.jaketrippy {
+ background-repeat: no-repeat;
+ background-size: 100%;
+ position:absolute;
+ border: none;
+ top: 50px;
+ left: 50px;
+ height: 5px;
+ width: 5px;
+}
