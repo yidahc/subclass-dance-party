@@ -20,7 +20,13 @@ body, a:link, a:visited, a:active{
 }
 .topbar{
   height:32px;
-  background-color: #555;
+  background-position: center;
+  background-color: black;
+}
+.lineUpButton{
+  background-color: #AA8CC5;
+  width: 15em;
+  height: 3em;
 }
 .title{
   background-color: #777;
