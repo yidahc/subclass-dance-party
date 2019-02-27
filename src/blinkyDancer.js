@@ -1,13 +1,13 @@
-var BlinkyDancer = function(top, left, timeBetweenSteps) {
+var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
 };
-BlinkyDancer.prototype = Object.create(makeDancer.prototype);
-BlinkyDancer.prototype.constructor = BlinkyDancer; 
+makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
+makeBlinkyDancer.prototype.constructor = makeBlinkyDancer; 
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
-var oldStep = BlinkyDancer.step;
+var oldStep = makeBlinkyDancer.step;
 
-BlinkyDancer.prototype.step = function() {
+makeBlinkyDancer.prototype.step = function() {
     // call the old version of step at the beginning of any call to this new version of step
     oldStep();
     // toggle() is a jQuery method to show/hide the <span> tag.
